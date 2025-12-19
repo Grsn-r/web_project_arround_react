@@ -1,0 +1,31 @@
+.img-full {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75vw;
+    max-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.card-img{
+    max-width: 75vw;
+    max-height: 75vh;
+    object-fit: contain;
+}
+.close-icon {
+    margin: 0 0 0 auto;
+    width: 30px;
+    cursor: url(../images/puntero-custom.png), pointer;
+}
+.close-icon:hover{
+    opacity: 60%;
+}
+.img-footer{
+    color: white;
+    align-self: baseline;
+}
+
