@@ -27,48 +27,7 @@
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 1);
 }
-.card{
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 1);
-}
-.card__img{
-    object-fit: cover;
-    height: 300px;
-    cursor: pointer;
-}
-.card__erase-button{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-.card__erase-button:hover{
-    opacity: 60%;
-    cursor: url(../images/puntero-custom.png), pointer;
-}
-.card__ftr{
-    margin: 0 20px;
-    font-family: 'Inter Black';
-    font-weight: 900;
-    font-size: 24px;
-    text-overflow: ellipsis;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.card__button{
-    width: 21px;
-}
-.card__button:hover{
-    opacity: 50%;
-    cursor: url(../images/puntero-custom.png), pointer;
-}
-.card__button-black{
-    background-image: url(../images/black-heart.svg);
-}
+
 @media screen and (max-width: 768px){
     .elements{
         grid-template-columns: repeat(2, 1fr);

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Card from './components/Cards/Card'
 import Popup from './components/popup/Popup'
 import EditProfile from './components/form/EditProfile/EditProfile'
 import EditAvatar from './components/form/EditAvatar/EditAvatar'
@@ -58,7 +59,12 @@ export default function Main() {
                 <img className="profile__add-button profile__add-button_img" src={addButton} alt="boton de añadir" />
             </div>
             </section>
-            <section className="elements">
+            <section>
+              <ul className='card__list'>
+                {cards.map((card) => (
+                  <Card key={card._id} card={card}/>
+                ))}
+              </ul>
             </section>
             {popup && (<Popup 
              onClose={handleClosePopup} 

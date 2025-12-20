@@ -19,7 +19,8 @@
 .close-icon {
     margin: 0 0 0 auto;
     width: 30px;
-    cursor: url(../images/puntero-custom.png), pointer;
+    cursor: pointer;
+    background-image: url(../images/Close_Icon.png);
 }
 .close-icon:hover{
     opacity: 60%;

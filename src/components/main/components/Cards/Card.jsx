@@ -1,14 +1,14 @@
-import EraseBtn from '../../../../images/trash-btn.png'
 
-export default function Card() {
+export default function Card(props) {
+    const {name, link, isLiked} = props.card;
     return (
-        <div className="card">
-                <img src={EraseBtn} className="card__erase-button" alt="boton eliminar"/>
-                <img className="card__img" src="" id="user-img" alt="imagen de usuario"/>
+        <li className="card">
+                <button type="button" aria-label="Delete Card" className="card__erase-button"/>
+                <img className="card__img" src={link} id="user-img" alt=""/>
                 <div className="card__ftr">
-                    <p id="new-card-title"></p>
-                    <img className="card__button" src="./images/elements-icon.svg" alt="icono de corazon"/>
+                    <p id="new-card-title">{name}</p>
+                    <button className="card__button" type="button" aria-label="Like Card"/>
                 </div>
-        </div>
+        </li>
     )
 }
