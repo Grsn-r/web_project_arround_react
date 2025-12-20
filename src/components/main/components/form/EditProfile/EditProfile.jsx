@@ -1,7 +1,6 @@
 export default function EditProfile() {
     return (
     <form className="popup__form" noValidate>
-      <h3 className="popup__title">Editar Perfil</h3>
       <label className="popup__field"><input 
         className="popup__input" 
         id="name" 

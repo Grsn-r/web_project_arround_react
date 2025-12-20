@@ -27,7 +27,7 @@
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 1);
 }
-.block{
+.card{
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -35,21 +35,21 @@
     flex-direction: column;
     background-color: rgba(255, 255, 255, 1);
 }
-.block__img{
+.card__img{
     object-fit: cover;
     height: 300px;
     cursor: pointer;
 }
-.block__erase-button{
+.card__erase-button{
     position: absolute;
     right: 20px;
     top: 20px;
 }
-.block__erase-button:hover{
+.card__erase-button:hover{
     opacity: 60%;
     cursor: url(../images/puntero-custom.png), pointer;
 }
-.block__ftr{
+.card__ftr{
     margin: 0 20px;
     font-family: 'Inter Black';
     font-weight: 900;
@@ -59,14 +59,14 @@
     align-items: center;
     justify-content: space-between;
 }
-.block__button{
+.card__button{
     width: 21px;
 }
-.block__button:hover{
+.card__button:hover{
     opacity: 50%;
     cursor: url(../images/puntero-custom.png), pointer;
 }
-.block__button-black{
+.card__button-black{
     background-image: url(../images/black-heart.svg);
 }
 @media screen and (max-width: 768px){
@@ -79,11 +79,11 @@
         grid-template-columns: 1fr;
         margin: auto;
     }
-    .block{
+    .card{
     width: 15rem;
     height: 21rem;
     }
-    .block__img{
+    .card__img{
         max-height: 240px;
     }
 }
