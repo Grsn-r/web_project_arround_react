@@ -1,4 +1,4 @@
-.img-full {
+popup__image {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -11,11 +11,6 @@
     flex-direction: column;
     z-index: 2;
 }
-.card-img{
-    max-width: 75vw;
-    max-height: 75vh;
-    object-fit: contain;
-}
 .close-icon {
     margin: 0 0 0 auto;
     width: 30px;
@@ -25,8 +20,5 @@
 .close-icon:hover{
     opacity: 60%;
 }
-.img-footer{
-    color: white;
-    align-self: baseline;
-}
+
 

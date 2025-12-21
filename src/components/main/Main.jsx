@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Card from './components/Cards/Card'
 import Popup from './components/popup/Popup'
+import ImagePopup from './components/ImagePopup/ImagePopup'
 import EditProfile from './components/form/EditProfile/EditProfile'
 import EditAvatar from './components/form/EditAvatar/EditAvatar'
 import NewCard from './components/form/NewCard/NewCard'
@@ -38,9 +39,18 @@ export default function Main() {
     const editProfilePopup = { title: "Editar perfil", children: <EditProfile />};
     const editAvatarPopup = { title: "Editar avatar", children: <EditAvatar />};
 
+    function handleImageClick(imageData) {
+    const imagePopup = {
+    title: null,
+    children: <ImagePopup card={imageData} />
+    };
+    setPopup(imagePopup);
+  }
+
     function handleOpenPopup(popup) {
     setPopup(popup);
   }
+
 
   function handleClosePopup() {
     setPopup(null)
@@ -62,7 +72,7 @@ export default function Main() {
             <section>
               <ul className='card__list'>
                 {cards.map((card) => (
-                  <Card key={card._id} card={card}/>
+                  <Card key={card._id} card={card} onCardClick={handleImageClick}/>
                 ))}
               </ul>
             </section>

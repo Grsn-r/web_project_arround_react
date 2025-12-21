@@ -1,18 +1,31 @@
 .popup{
-    width: 30%;
+   display: flex;
+}
+.popup__content{
     position: fixed;
     z-index: 2;
-    top:150px;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
-    padding: 25px;
     border-radius: 5px;
 }
+.popup__caption{
+    color:black;
+    align-self: center;
+}
 .popup__form{
+    width: 30vw;
     display: flex;
     flex-direction: column;
+    padding: 25px;
+}
+.popup__image{
+    max-width: 75vw;
+    max-height: 75vh;
+    object-fit: contain;
 }
 .form--new-place{
     width: 30%;
@@ -32,6 +45,9 @@
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0%;
+    align-self: center;
+    margin: 0;
+    padding-top: 10px;
 }
 .popup__input{
     border: none;
