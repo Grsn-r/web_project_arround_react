@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.card__button{
+.card__like-button{
     width: 24px;
     height: 24px;
     background-color: transparent;
@@ -51,10 +51,10 @@
     background-repeat: no-repeat;
     border: none;
 }
-.card__button:hover{
+.card__like-button:hover{
     opacity: 50%;
     cursor: url(../images/puntero-custom.png), pointer;
 }
-.card__button-black{
+.card__like-button_is-active{
     background-image: url(../images/black-heart.svg);
 }
