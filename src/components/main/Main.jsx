@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import Card from './components/Card/Card'
 import Popup from './components/Popup/Popup'
 import EditProfile from './components/Popup/EditProfile/EditProfile'
@@ -9,7 +9,6 @@ import editButton from '../../images/edit-button.png'
 import addButton from '../../images/add-btn-img.png'
 import '../../index.css'
 import CurrentUserContext from '../../contexts/CurrentUserContext'
-import api from '../../utils/api'
 
 export default function Main({onOpenPopup, onClosePopup, popup, cards, onCardLike, onCardClick, onCardDelete}) {
     const {currentUser} = useContext(CurrentUserContext);
