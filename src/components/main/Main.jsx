@@ -6,10 +6,10 @@ import EditAvatar from './components/form/Avatar/EditAvatar'
 import NewCard from './components/form/NewCard/NewCard'
 import editAvatarBtn from '../../images/edit_avatar_btn.png'
 import editButton from '../../images/edit-button.png'
-import avatar from '../../images/avatar.jpg'
 import addButton from '../../images/add-btn-img.png'
 import '../../index.css'
 import CurrentUserContext from '../../context/CurrentUserContext'
+import api from '../../utils/api'
 
 export default function Main({onOpenPopup, onClosePopup, popup, cards, onCardLike, onCardClick, onCardDelete}) {
     const {currentUser} = useContext(CurrentUserContext);

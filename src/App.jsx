@@ -30,6 +30,14 @@ function App() {
       }). catch((error) => console.error(error));
     }
 
+    const handleAddPlaceSubmit = async (data) => {
+      await api.addCard(data).then((newCard) => {
+        setCards([newCard, ...cards]);
+        handleClosePopup();
+      })
+      .catch((error) => console.error(error))
+    }
+
     useEffect(() => {
       api.getCardList()
       .then((cardsData) => {
@@ -85,7 +93,10 @@ function App() {
 
   return (
 <div className="page">
-  <CurrentUserContext.Provider value={{currentUser, handleUpdateUser, handleUpdateAvatar}}>
+  <CurrentUserContext.Provider value={{currentUser, 
+    handleUpdateUser, 
+    handleUpdateAvatar,
+    handleAddPlaceSubmit}}>
     <Header />
     <Main cards={cards}
     onOpenPopup={handleOpenPopup}
