@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from 'react'
-import Card from './components/Cards/Card'
+import Card from './components/Card/Card'
 import Popup from './components/Popup/Popup'
 import EditProfile from './components/Popup/EditProfile/EditProfile'
 import EditAvatar from './components/Popup/EditAvatar/EditAvatar'
