@@ -8,7 +8,7 @@ import editAvatarBtn from '../../images/edit_avatar_btn.png'
 import editButton from '../../images/edit-button.png'
 import addButton from '../../images/add-btn-img.png'
 import '../../index.css'
-import CurrentUserContext from '../../context/CurrentUserContext'
+import CurrentUserContext from '../../contexts/CurrentUserContext'
 import api from '../../utils/api'
 
 export default function Main({onOpenPopup, onClosePopup, popup, cards, onCardLike, onCardClick, onCardDelete}) {

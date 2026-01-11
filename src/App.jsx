@@ -4,7 +4,7 @@ import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
 import api from './utils/api';
 import {useState, useEffect} from 'react'
-import CurrentUserContext from './context/CurrentUserContext';
+import CurrentUserContext from './contexts/CurrentUserContext';
 import ImagePopup from './components/main/components/ImagePopup/ImagePopup'
 
 
