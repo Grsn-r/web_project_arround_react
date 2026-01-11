@@ -5,7 +5,7 @@ import Footer from './footer/Footer';
 import api from '../utils/api';
 import {useState, useEffect} from 'react'
 import CurrentUserContext from '../contexts/CurrentUserContext';
-import ImagePopup from './main/components/ImagePopup/ImagePopup'
+import ImagePopup from './main/components/Popup/ImagePopup/ImagePopup'
 
 
 function App() {
